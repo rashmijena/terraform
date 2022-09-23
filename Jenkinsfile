@@ -9,8 +9,8 @@ pipeline {
     }
 
     parameters {
-        String(name:'envTarget', defaultValue:'DEV',description:'currently defaulting to DEV')
-        String(name:'subEnvTarget', defaultValue:'HOM',description:'currently defaulting to HOM')
+        string(name:'envTarget', defaultValue:'DEV',description:'currently defaulting to DEV')
+        string(name:'subEnvTarget', defaultValue:'HOM',description:'currently defaulting to HOM')
         choice(
             name: 'Action',
             choices: ['Build', 'Destroy'],
