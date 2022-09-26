@@ -2,15 +2,16 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
-        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
+        AWS_ACCESS_KEY_ID     = 'test'
+        AWS_SECRET_ACCESS_KEY = 'test123'
+     
         AWS_DEFAULT_REGION    = "eu-west-1"
         BACKEND_BUCKET        = "jenkins-terraform-pipeline-state"
     }
 
     parameters {
-        String(name:'envTarget', defaultValue:'DEV',description:'currently defaulting to DEV')
-        String(name:'subEnvTarget', defaultValue:'HOM',description:'currently defaulting to HOM')
+        string(name:'envTarget', defaultValue:'DEV',description:'currently defaulting to DEV')
+        string(name:'subEnvTarget', defaultValue:'HOM',description:'currently defaulting to HOM')
         choice(
             name: 'Action',
             choices: ['Build', 'Destroy'],
@@ -98,4 +99,5 @@ def inspecValidation() {
 def locateEnvFolder() {
     return params.envTarget + '/' + params.subEnvTarget
 }
-////https://github.com/coresolutions-ltd/jenkins-terraform-pipeline
+
+//https://github.com/coresolutions-ltd/jenkins-terraform-pipeline
