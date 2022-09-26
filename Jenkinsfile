@@ -62,7 +62,7 @@ pipeline {
 def terraformInit() {
     sh("""
         cd DEV/HOM;
-        terraform init -backend-config="bucket=${env.BACKEND_BUCKET}" -backend-config="key=demo.tfstate"
+        terraform init -backend-config="bucket=${env.BACKEND_BUCKET}" -backend-config="key=HOM.tfstate"
         terraform workspace select ${params.Colour.toLowerCase()} || terraform workspace new ${params.Colour.toLowerCase()}
     """)
 }
@@ -99,3 +99,5 @@ def inspecValidation() {
 def locateEnvFolder() {
     return params.envTarget + '/' + params.subEnvTarget
 }
+
+//https://github.com/coresolutions-ltd/jenkins-terraform-pipeline
