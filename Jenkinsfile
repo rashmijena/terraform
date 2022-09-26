@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        jenkins-aws-id = credentials('jenkins-aws-id')
+        jenkins_aws_id = credentials('jenkins-aws-id')
         
         //AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
         //AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
@@ -29,7 +29,7 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                echo  "Global property jenkins-aws-id: ${jenkins-aws-id}"
+                echo  "Global property  jenkins_aws_id: ${ jenkins_aws_id}"
                 terraformInit()
             }
         }
