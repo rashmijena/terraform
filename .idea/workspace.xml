@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9a7f6be-065b-486e-a3f6-ac7492f98799" name="Default Changelist" comment="">
+    <list default="true" id="36917cb7-22a3-4d0a-9e0c-6674dcb332dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +53,16 @@
       <env key="AWS_SECRET_ACCESS_KEY" value="loMgmdE3OaTilZ9fBFSTPKToeoHFfHWt9B5dCiy/" />
     </envs>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1046" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1663957712774">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -61,6 +72,10 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2921" y="389" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1663959024989" />
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1664216620663">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1664216620663" />
     <state x="1147" y="450" key="EnvironmentVariablesDialog" timestamp="1663957390012">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
