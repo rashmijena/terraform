@@ -29,6 +29,7 @@ pipeline {
     stages {
         stage('Init') {
             steps {
+                echo  "Global property jenkins-aws-id: ${jenkins-aws-id}"
                 terraformInit()
             }
         }
