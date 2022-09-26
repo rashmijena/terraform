@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        jenkins_aws_id = credentials('jenkins-aws-id')
+        //jenkins_aws_id = credentials('jenkins-aws-id')
         
-        //AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
-        //AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
+        AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
      
         AWS_DEFAULT_REGION    = "eu-west-1"
         BACKEND_BUCKET        = "jenkins-terraform-pipeline-state"
@@ -29,7 +29,8 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                echo  "Global property  jenkins_aws_id: ${ jenkins_aws_id}"
+                echo  "Global property  AWS_ACCESS_KEY_ID: ${ AWS_ACCESS_KEY_ID}"
+                echo  "Global property  AWS_SECRET_ACCESS_KEY: ${ AWS_SECRET_ACCESS_KEY}"
                 terraformInit()
             }
         }
