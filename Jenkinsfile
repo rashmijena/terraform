@@ -29,8 +29,8 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                echo  "Global property  AWS_ACCESS_KEY_ID: ${ AWS_ACCESS_KEY_ID}"
-                echo  "Global property  AWS_SECRET_ACCESS_KEY: ${ AWS_SECRET_ACCESS_KEY}"
+                echo  "Global property  AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}"
+                echo  "Global property  AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}"
                 terraformInit()
             }
         }
