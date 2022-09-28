@@ -58,7 +58,7 @@ pipeline {
     post {
         always {
             echo 'Deleting Directory!'
-            deleteDir()
+         //   deleteDir()
         }
     }
 }
